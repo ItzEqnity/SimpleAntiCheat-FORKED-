@@ -1,7 +1,5 @@
 # SimpleAntiCheat-FORKED-
-Fork of SimpleAntiCheat by neonjava — added /anticheat reload command for live config reloading without server restart.
-
-
+Fork of SimpleAntiCheat by neonjava — added /anticheat reload, BadPackets, NoFall and Timer checks.
 
 # SimpleAntiCheat (Fork)
 
@@ -9,11 +7,14 @@ Fork of SimpleAntiCheat by neonjava — added /anticheat reload command for live
 > I do not claim ownership of the original code.
 
 ## What I Added
-- `/anticheat reload` command — reloads `config.yml` live without restarting the server
-- Permission node: `autototemdetector.admin` (default: op) required to use the command
+- `/anticheat reload` — reloads `config.yml` live without restarting the server
+- `BadPackets` — detects illegal/malformed packets from hacked clients
+- `NoFall` — detects players cancelling fall damage
+- `Timer` — detects players speeding up their game tick rate
+- Permission node: `autototemdetector.admin` (default: op) required to use /simpleanticheat:anticheat reload
 
 ## Usage
-After editing `config.yml`, run in-game: /simpleanticheat reload
+After editing `config.yml`, run in-game:/simpleanticheat reload
 Changes apply instantly.
 
 ## Original Plugin
